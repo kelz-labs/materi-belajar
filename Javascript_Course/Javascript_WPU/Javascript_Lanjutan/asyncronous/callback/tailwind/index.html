@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@500;600;700&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #A3D4D5;
+      background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    </style>
+    <title>Movies</title>
+  </head>
+  <body>
+
+
+  <h1 class="text-3xl font-bold mt-16">Pencari Film</h1>
+  <div class='flex items-center justify-center mx-4 mt-12 from-cyan-100 via-pink-200 to-yellow-200 bg-gradient-to-br'>
+    <div class="flex items-center max-w-md mx-auto bg-white rounded-lg " x-data="{ search: '' }">
+        <div class="w-full">
+            <input type="search" class="input-keyword w-full px-4 py-1 text-gray-800 rounded-full focus:outline-none"
+                placeholder="Search here" x-model="search">
+        </div>
+        <div>
+            <button type="search" class="search-button flex items-center bg-blue-500 justify-center w-12 h-12 text-white rounded-r-lg"
+                :class="(search.length > 0) ? 'bg-purple-500' : 'bg-gray-500 cursor-not-allowed'"
+                :disabled="search.length == 0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+        </div>
+      </div>
+  </div>
+<div class="flex flex-wrap pt-20 lg:pt-[120px] pb-10 lg:pb-20 container movie-container"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+      </body>
+</html>

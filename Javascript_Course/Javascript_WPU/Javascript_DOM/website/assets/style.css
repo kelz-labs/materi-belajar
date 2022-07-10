@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap');
+
+/*buat ngakalin effect yang nggak full*/
+html, body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: -200px;
+  justify-content: center;
+  align-items: center;
+  font-family: "rubik", sans-serif;
+}
+
+button {
+  background: #957FB8;
+  font-family: 'poppins', sans-serif;
+  padding: 7px 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+  background-color: #223249;
+  color: white;
+}
+
+.warna {
+  background-color: #1F1F28;
+  color: white;
+}
+
+.judul {
+  background: linear-gradient(90deg, rgba(149,51,246,1) 0%, rgba(94,198,129,1) 53%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.kotak {
+  width: 35px;
+  margin: 10px auto;
+  height: 25px;
+}
+
+.merah {
+  background: red;
+}
+
+.hijau {
+  background: green;
+}
+
+.biru {
+  background: blue;
+}
+
+

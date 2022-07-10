@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      const nama = ["Haikel", "Sakura", "Megumi"];
+      // disini, ada 3 array, nah nanti yang diprint itu semua array ini sebanyak 3 kali, karena ya jumlah array nya ada 3
+
+for (const name of nama) {
+  document.writeln(`<p>${nama}</p>`);
+}
+      const karakter = "Haikel"; // Berbeda dengan array, kalo di string, dia akan memprint, sesuai jumlah kata.
+      // Misal disini si karakter itu bernilai "Haikel", nah kalimat Haikel itu kan memiliki 6 kata, jadi nanti akan diprint Haikel sebanyak 6 kali sesuai dengan jumlah katanya.
+
+for (const char of karakter) {
+  document.writeln(`<p>${karakter}</p>`);
+}
+    </script>
+  </body>
+</html>

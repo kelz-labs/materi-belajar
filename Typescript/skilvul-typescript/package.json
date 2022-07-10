@@ -1,0 +1,20 @@
+{
+  "name": "skilvul-typescript",
+  "version": "1.0.0",
+  "description": "belajar typescript",
+  "main": "index.js",
+  "author": "haikel",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test speficied\" && exit 1", 
+    "compile": "tsc"
+  }, 
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0"
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+      <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+      <script>
+        /* Contoh dari JS
+        const root = document.querySelector('#root');
+        const element = document.createElement('h1'); // return nya node
+        element.textContent = 'Hai from JS';
+        element.className = 'hai';
+
+        root.appendChild(element);
+        */
+
+        // Contoh dengan react
+        const root = document.querySelector('#root');
+        /*const element = React.createElement('p', {
+          children: 'Halo paragraf 1',
+        });
+
+        const element2 = React.createElement('p', {
+        children: 'Halo paragraf 2'
+        });
+
+        const element3 = React.createElement('h1', {
+        children: 'Lu anime ya banh'
+        });
+
+        const wrap = React.createElement('div', {
+        children: [element3, element, element2]
+        });
+        */
+        //ReactDOM.render([element3, element, element2], root); //react dom fungsinya untuk merender
+        // Untuk mengakali render 2 atau lebih element, kita bisa passing dengan array
+//        ReactDOM.render(wrap, root);
+
+        // Membuat ul li
+
+        const h1 = React.createElement('h1', {
+        children: 'Lihat list berikut ini: '
+        })
+        const li = React.createElement('li', {
+        children: "Anime ya banh"
+        });
+
+        const li2 = React.createElement('li', {
+        children: "Gw? Lu yang anime"
+        });
+
+        const li3 = React.createElement('li', {
+        children: "Jangan tanya saya"
+        });
+
+        const ul = React.createElement('ul', {
+        children: 'Testing'
+        });
+
+        // atau kita bisa langsung buat element nya di dalam render
+        const element = React.createElement(
+        'ul',
+        {className: 'list'},
+        React.createElement('li', null, 'Lu anime ya banh'),
+
+        React.createElement('li', null, 'Gw? Lu aja kali yang anime'),
+
+        React.createElement('li', null, 'Jangan tanya saya')
+
+        )
+        ReactDOM.render([h1, element], root);
+        console.log(ul);
+      </script>
+
+  </body>
+</html>

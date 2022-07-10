@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haikel's alert</title>
+  </head>
+  <body>
+    <script>
+      // Sekarang adalah materi alert, confirm, dan prompt
+      // Basic penggunaan alert
+      alert("Hello world");
+
+      // mengkombinasikan alert dan prompt
+      const pertanyaan = prompt("Masukkan namamu");
+      alert(`Selamat datang, ${pertanyaan}`);
+      /* Cara kerja: Jadi kita membuat deklarasi prompt. Nah setelah kita memasukkan nama, nama tersebut akan dikirim ke alert dan diprint bersamaan dengan kata "Selamat datang". */
+
+      // if else di alert
+        const penjumlahan = prompt("1 + 1 - 2 + 100 - 100 = ?");
+        const konfirmasi = confirm("Apa kamu yakin ini adalah jawabannya? ");
+if (konfirmasi, penjumlahan == 0) {
+  alert("Benar!! Selamat");
+}
+
+else {
+  alert("Tebakanmu Salah, Bye!");
+}
+
+const masuk = confirm("Anda yakin mau masuk?");
+
+if (masuk){
+  const nama = prompt("Siapa nama anda? ");
+  alert(`Hai. Selamat datang, ${nama}`);
+}
+
+    </script>
+  </body>
+</html>

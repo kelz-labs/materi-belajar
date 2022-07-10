@@ -1,0 +1,15 @@
+.player-area {
+  margin: 200px 0px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+li {
+  margin: 50px 50px 0 0;
+}

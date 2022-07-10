@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2E3440;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.card {
+    font-family: 'Poppins', sans-serif;
+    background: #D8DEE9; 
+}
+

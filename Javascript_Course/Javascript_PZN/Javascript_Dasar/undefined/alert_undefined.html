@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alert Undefined</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script>
+
+      // Materi undefined
+      let alertUndefined;
+
+if (alertUndefined == undefined) {
+  alert("Tidak ada nilai, UNDEFINED");
+}
+
+else {
+  alert("Ada nilainya");
+}
+
+const daftar = ["TKJ", "RPL", "Multimedia", "Akuntansi", "Pemasaran", "Teknik Mesin"];
+console.log(daftar[6]); // Nanti hasilnya undefined karena arraynya hanya sampai index ke 5
+delete daftar[6]; // atau bisa juga daftar[6] = undefined;
+
+let person = {};
+
+if (person.name == undefined) {
+  alert("Hai semua");
+}
+
+else {
+  alert(`Halo, saya ${person.name}`);
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <script>
+
+    // contoh kata kunci this di global scope dan di function
+    console.log(this);
+
+    function nama() {
+      console.log(this);
+    }
+
+    nama();
+
+    function sample() {
+      console.log(this);
+
+      function inner() {
+        console.log(this);
+      }
+      inner();
+    }
+    sample();
+
+    // contoh jika dipakai di object method
+    const person = {
+      name: 'yuuki',
+      sayHello: function (nilai) {
+        console.log(`Halo, ${nilai}, my name is ${this.name}`)
+      }
+    }
+
+    person.sayHello('whyred');
+  </script>
+  </body>
+</html>

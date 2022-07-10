@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script>
+      // If else expression di Javascript
+      const nilaiUjian = 80;
+const nilaiAbsen = 50;
+
+const kkmUjian = 80;
+const kkmAbsen = 80;
+
+const hadiah = ["Sepeda", "motor", "Handphone", "Voucher Bootcamp Gratis"];
+const hadiah2 = ["Buku", "Tutorial webdev", "Sertifikasi react js"];
+
+const hukuman = "Tak getok kepalamu yo";
+
+if (nilaiUjian >= 80 && nilaiAbsen >= 80) { // Jika nilaiUjian lebih dari 80, dan nilaiAbsen lebih dari 80, maka bernilai true. Kalau salah satunya tidak terpenuhi, maka akan false
+  console.log(hadiah);
+}
+
+else if (nilaiUjian >= 80 && nilaiAbsen >= 60 < 80) {
+  console.log(hadiah2);
+}
+
+else if (nilaiUjian >= 80 && nilaiAbsen < 60) {
+  console.log(hukuman);
+}
+
+else if (nilaiUjian >= 60 < 80 && nilaiAbsen >= 80) {
+  console.log(hadiah2);
+}
+
+else if (nilaiUjian < 60 && nilaiAbsen >=80) {
+  console.log(hukuman);
+}
+
+else {
+  console.log("Waduh kecil kali oi"); // Jika kondisi di atas tidak terpenuhi, maka dia akan bernilai false.
+}
+
+alert("Selamat datang cui, silahkan melihat-lihat");
+    </script>
+  </body>
+</html>

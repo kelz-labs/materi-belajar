@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Switch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      // Switch statement, mirip-mirip dengan if else, tapi dia lebih sederhana. Dan kondisi di switch statement ini hanya berlaku untuk ==, selain itu tidak bisa.
+      // Contoh:
+      let nilai = 80;
+
+// switch ini fungsinya untuk mengecek suatu nilai apakah dia memenuhi syarat atau tidak. Jika nlainya belum terdefinisi, maka hasilnya tidak akan keluar atau nanti akan mengarah ke default
+switch (nilai) {
+  case 90:
+  alert("Kamu bisa mendapatkan beasiswa");
+  break; // break ini berfungsi untuk menandakan bahwa suatu case itu sudah selesai dan siap lanjut ke case lain. Jika tidak menambahkan break, maka dia akan jalan terus.  Ibaratkan bahwa break itu tempat istirahat
+
+  case 80:
+  alert("Maaf coba tahun depan yah");
+  break;
+
+  default: // default ini ibarat else. Jika semua case diatas tidak terpenuhi, maka akan dinyatakan di default bahwa belum memenuhi syaratt
+  alert("Nilai kamu belum mencukupi untuk mendaftar ke beasiswa");
+  break;
+}
+
+// Berikut jika dia menggunakan if else. Malah terasa lebih leluasa pake if else
+
+if (nilai == 90) {
+  alert("Kamu bisa mendapatkan beasiswa");
+}
+
+else if (nilai == 80) {
+  alert("Maaf coba tahun depan yah");
+}
+
+else {
+  alert("Nilai kamu belum mencukupi untuk mendaftar ke beasiswa");
+}
+alert
+    </script>
+  </body>
+</html>

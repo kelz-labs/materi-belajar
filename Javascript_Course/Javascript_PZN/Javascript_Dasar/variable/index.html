@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    document.writeln(100);
+    document.writeln("<br>");
+    document.writeln(100, 123);
+    document.writeln("<br>")
+    document.writeln(0b1111010);
+
+    //Contoh tipe data boolean digabungkan dengan if
+    const angka_lima = 8;
+    const angka_enam = 6;
+
+    document.writeln("<br>");
+
+    if (angka_enam > angka_lima) {
+      document.writeln(true);
+    }
+
+    else if (angka_enam < angka_lima) {
+      document.writeln("Hal tersebut tidaklah mungkin.");
+    }
+
+    document.writeln("<br>");
+
+    //Tipe data string
+    const anime = "Gotoubun no Hanayome";
+    const jadwal = " Season terakhir akan dijadwalkan tayang pada Januari 2022.";
+    document.writeln(anime + jadwal);
+
+    document.writeln("<br>");
+
+    document.writeln("haikel");
+    document.writeln("<br>");
+    document.writeln("Young developer and Programmer");
+
+    // Materi Variable. Ini contoh kalau tidak pakai Variable. Terasa panjang bukan?
+    document.writeln("<textarea cols='100' rows='10'>");
+    document.write("\nHaikel Ilham Hakim");
+    document.write("\nDari Bangka Belitung");
+    document.write("\nUsia: 18 Tahun\n");
+    document.writeln("</textarea>");
+
+    // Contoh yang memakai variable:
+    var nama;
+
+    nama = "Yotsuba"; // Lihat, kita disini bisa mengubah nilai variable sesuai dengan apa yang kita mau.
+    document.write(nama);
+
+    var firstName;
+    var middleName;
+    var lastName;
+
+    firstName = "Haikel ";
+    middleName = "Yotsuba ";
+    lastName = "Nakano";
+
+    document.writeln(firstName + middleName + lastName);
+
+    // Penggabungan variable dan value. Sebagai catatan, variable itu bisa digunakan berkali-kali tanpa ada batasan.
+    var satu = 1 + 200;
+    document.write(satu);
+    document.write(satu);
+    document.writeln(satu + satu);
+
+
+  </script>
+</body>
+
+</html>
